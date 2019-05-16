@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+        <base target="_blank">
 		<title>Beginners Intro to Web Development</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
@@ -102,9 +102,9 @@
 				<section >
 					<h2>What is React</h2>
 					<ul>
-						<li>React is a JavaScript library created by Facebook</li>
-						<li>React is a User Interface (UI) library</li>
-						<li>React is a tool for building UI components</li>
+						<li>JavaScript library created by Facebook</li>
+						<li>User Interface (UI) library</li>
+						<li>Tool for building UI components</li>
                     </ul>
                     <p>At it's core it's a library that takes some state and generates some HTML. It's all about components.</p>
 				</section>
@@ -349,7 +349,7 @@ function Board() {
 
   return (
     &lt;div className=&quot;Board&quot;&gt;
-      {boardState.map((elem, index) =&gt; {
+      {boardState.map(function(elem, index) {
         return (
           &lt;BoardPiece key={index} elem={elem} /&gt;
         );
